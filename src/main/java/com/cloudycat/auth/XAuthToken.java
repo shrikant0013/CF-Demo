@@ -6,11 +6,14 @@ import org.springframework.security.core.GrantedAuthority;
 import java.util.Collection;
 
 /**
- * Created by spandhare on 7/1/16.
+ * Created by spandhare on 7/5/16.
+ */
+
+/**
+ * Value object for Auth token
  */
 public class XAuthToken implements Authentication {
     private String token;
-
 
     public XAuthToken(String token) {
         this.token = token;
@@ -43,7 +46,6 @@ public class XAuthToken implements Authentication {
 
     @Override
     public void setAuthenticated(boolean isAuthenticated) throws IllegalArgumentException {
-
     }
 
     @Override

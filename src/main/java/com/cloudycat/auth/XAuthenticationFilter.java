@@ -1,8 +1,6 @@
 package com.cloudycat.auth;
 
-import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -11,11 +9,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Collection;
 import java.util.Enumeration;
 
 /**
- * Created by spandhare on 7/1/16.
+ * Created by spandhare on 7/5/16.
+ */
+
+/**
+ * Filter chain that intercepts and checks for authentication header
  */
 public class XAuthenticationFilter extends OncePerRequestFilter {
 

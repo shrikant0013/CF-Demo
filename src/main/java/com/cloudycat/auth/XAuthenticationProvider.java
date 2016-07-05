@@ -1,19 +1,23 @@
 package com.cloudycat.auth;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
+import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
-import org.springframework.security.authentication.AuthenticationProvider;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
 import java.util.List;
 
 /**
- * Created by spandhare on 7/1/16.
+ * Created by spandhare on 7/5/16.
+ */
+
+/**
+ *
+ * AUthentication mechanism used by Spring security
  */
 
 @Component
