@@ -5,7 +5,7 @@ This is a tiny one endpoint web application, in Java language, that does "String
 * Is an API that by can be called by any REST client 
 
 ## Live instance
-Use REST client like [Postman] (https://www.getpostman.com/) to access the endpoint
+Use REST client like [Postman] (https://www.getpostman.com/) to access the endpoint. Use 'X-Auth-Key' as auth header.
 https://cloudycat.herokuapp.com/concat?pre=hello&post=world
 
 ## Pre requisites
@@ -14,7 +14,7 @@ Java 8
 ## Steps to setup, deploy and run locally
 
 1. git clone https://github.com/shrikant0013/CF-Demo.git
-2. cd cloudycat
+2. cd CF-Demo
 3. ./gradlew build
 4. java -jar build/libs/cloudycat-0.0.1-SNAPSHOT.jar
 5. REST endpoint will be available at http://localhost:8080/concat
